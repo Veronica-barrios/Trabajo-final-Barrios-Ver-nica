@@ -1,0 +1,143 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: brown;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.Titulo-Principal, .somos {
+    color: white;
+    background-color: brown;
+    padding: 30px;
+    text-align:center;
+}
+
+#segundo,#parrafo-principal{
+    color: white;
+    background-color: brown;
+    padding: 20px;
+    text-align: center;
+}
+
+.cursos{
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr 2fr;
+    grid-gap:20px;
+    display: grid;
+    grid-template-areas:
+    "anuncio1 anuncio1 anuncio1 anuncio1"
+    "curso1 curso2 curso3 curso4";
+}
+
+aside{
+    background-color: blue;
+    text-align: center;
+    color: #fff;
+    margin:10px;
+    padding: 20px;
+}
+.anuncio img{
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    
+}
+
+.curso{
+
+    background-color: gray;
+    border: 5px solid brown;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.curso img{
+    max-width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    
+}
+
+button{
+    background-color: #337ab3;
+    color:#fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: red;
+}
+
+form{
+    max-width: 400px;
+    margin: auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.contact-section{
+    background-color:gray;
+    text-align:center;
+    padding: 10px;
+}
+
+.contact-section h2{
+    padding: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button{
+    background-color:brown;
+    color:white;
+    padding: 10px  20px;
+    cursor: pointer;
+}
+
+footer{
+    color:white;
+    background-color: brown;
+    text-align: center;
+    padding: 20px;
+    border: 10px solid gray;
+}
+
+@media screen and (max-width:769px){
+    .cursos{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "anuncio1"
+        "curso1"
+        "curso2"
+        "curso3"
+        "curso4"
+        "curso5"
+        "curso6"
+        ;
+        
+    }
+    .video{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    } 
+    
+}
+
+
+

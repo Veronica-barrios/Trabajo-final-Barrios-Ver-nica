@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Cursos de inglés</title>
+</head>
+<body>
+  <header>
+<!--Navegador hamburguesa-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand">Cursos de Inglés</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="nosotros.html">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="certificacion.html">Exámenes y convenios</a>
+            </li>      
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+<!--Titulo principal-->
+    <section class="somos">
+      <h1>¿Quienes somos?</h1>
+      <p>Somos un Instituto con 30 años de trayectoria educando personas que desean aprender inglés a lo largo de la Republica Argentina.Contamos con cursos virtuales y presenciales a la largo del pais que se adaptan a todas las edades y a todas las particularidades de las personas que quieren aprender Inglés.Nuestro Intituto ofrece cursos en ingles para todas las edades ya que consideramos que en el mundo actual es una herramienta esencial y fundamental para progresar socialmente,culturalmente y laboralmente. </p>
+    </section>
+<!--Carrusel-->
+    <section >     
+      <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/aprendiendo-en-familia.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/121262436-grupo-de-compañeros-de-clase-sentados-en-el-escritorio-mirando-la-tableta-y-discutiendo-algo.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Se-puede-aprender-ingles-siendo-un-adulto-mayor.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+<!--Formulario de contacto-->
+    <section>  
+      <section class="contact-section">
+        <h2 id="segundo">Contacto</h2> 
+        <p>¿Tienes alguna duda? ¡Escribinos!</p>
+        <form action="#"method="post">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje: </label>
+            <textarea id="mensaje" name="mensaje" rows="4" required> </textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section> 
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <footer>
+    <p>2023. Todos los derechos reservados</p>
+    <p>Realizado por Barrios Verónica</p>
+  </footer> 
+</body>
+</html>
